@@ -1,15 +1,4 @@
-/**
-* Template Name: EstateAgency
-* Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-* Updated: Aug 09 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1750,4 +1739,68 @@ section,
 footer {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* --- Visual Enhancements for Moonlight Site v9 --- */
+
+/* Link hover effect */
+a:hover {
+  color: #bfa36f !important;
+  transition: color 0.3s ease;
+}
+
+/* Responsive footer stacking */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Scroll to Top Button Styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #bfa36f;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-to-top:hover {
+  background-color: #a99054;
+}
+
+.floating-call-btn {
+  position: fixed;
+  bottom: 90px; /* keeps it above the scroll-to-top button */
+  right: 20px;
+  background-color: #d4af37;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-size: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.floating-call-btn:hover {
+  transform: scale(1.1);
+  background-color: #c9a02f;
+}
+
+.floating-call-btn i {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
 }

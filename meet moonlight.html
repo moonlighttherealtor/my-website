@@ -1,99 +1,212 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Meet Moonlight - Moonlight The Realtor</title>
+<title>Meet Moonlight - Moonlight The Realtor | Vancouver Luxury Real Estate</title>
+<meta content="Professional Vancouver real estate services. Buy, sell, or invest with Moonlight The Realtor. Expert advice and luxury listings." name="description"/>
+<meta content="Vancouver real estate, luxury homes, Moonlight Realtor, buy home Vancouver, sell property, real estate agent" name="keywords"/>
+<meta content="Moonlight The Realtor" name="author"/>
+<!-- Open Graph (for Facebook/social preview) -->
+<meta content="Moonlight The Realtor | Vancouver Luxury Real Estate" property="og:title"/>
+<meta content="Expert real estate guidance for buyers, sellers, and investors in Vancouver. Browse listings, schedule a consultation, and explore the market." property="og:description"/>
+<meta content="assets/img/social-preview.jpg" property="og:image"/>
+<meta content="https://moonlighttherealtor.com/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- Favicon + Fonts + Stylesheets (already correct) -->
 <link href="assets/img/favicon.png" rel="icon"/>
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
 <link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
-<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="assets/css/main.css" rel="stylesheet"/>
-</head>
-<body class="about-page">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+  body {
+    background-color: #f6f0e6 !important;
+  }
+  a, a:hover, a:visited {
+    text-decoration: none !important;
+  }
+.testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+.testimonial-block {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+.testimonial-avatar-column {
+  flex: 0 0 180px;
+  text-align: center;
+}
+.testimonial-text-column {
+  flex: 1;
+  text-align: left;
+}
+.testimonial-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1rem;
+}
+.testimonial-stars {
+  color: gold;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+.testimonial-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #444;
 
-<header class="header d-flex align-items-center fixed-top">
-  <div style="display: flex; align-items: center; justify-content: space-between; width: 90%; margin: 0 auto;">
-    <div style="line-height: 1;">
-      <div style="font-weight: bold; font-size: 20px;">MOONLIGHT</div>
-      <div style="font-size: 14px;">THE REALTOR</div>
-    </div>
-    <nav class="navmenu" id="navmenu">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="agents.html">Meet Moonlight</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-  </div>
+  margin: 0;}
+@media (max-width: 768px) {
+  .testimonial-block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-text-column {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Moonlight",
+  "jobTitle": "Real Estate Agent",
+  "url": "https://moonlighttherealtor.com",
+  "image": "https://moonlighttherealtor.com/assets/img/moonlight-headshot.jpg",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Moonlight The Realtor"
+  },
+  "sameAs": [
+    "https://www.instagram.com/moonlighttherealtor",
+    "https://www.facebook.com/moonlighttherealtor"
+  ]
+}
+</script>
+
+</head>
+<body>
+  <!-- Header (fully matching original style) -->
+  <header class="header d-flex align-items-center fixed-top">
+<div style="display: flex; align-items: center; justify-content: space-between; width: 90%; margin: 0 auto;">
+<div style="line-height: 1;">
+<div style="font-weight: bold; font-size: 20px;">MOONLIGHT</div>
+<div style="font-size: 14px;">THE REALTOR</div>
+</div>
+<nav class="navmenu" id="navmenu">
+<ul>
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="properties.html">Properties</a></li>
+<li><a href="meet moonlight.html">Meet Moonlight</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+</div>
 </header>
 
+  <!-- Main Content -->
+  
+ <main style="padding-top: 150px; padding-bottom: 125px; background-color: #f8f3ea;">
+  <div style="max-width: 1100px; margin: 60px auto; background: #f7f1e8; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-radius: 30px; padding: 30px;">
+    <div style="max-width: 900px; margin: auto; background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.05); border-radius: 20px; padding: 40px;">
 
-<main class="main">
-<div class="page-title" data-aos="fade">
-<div class="heading">
-<div class="container">
-<div class="row justify-content-center text-center">
-<div class="col-lg-8">
-<h1>Meet Moonlight</h1>
+      <!-- ✅ Optional profile image -->
+      <img src="assets/img/moonlight-portrait.jpg" alt="Moonlight The Realtor" style="width: 250px; height: auto; border-radius: 12px; display: block; margin: 0 auto 30px auto; box-shadow: 0 6px 20px rgba(0,0,0,0.15);" />
 
+      <!-- ✅ Main headline -->
+      <h2 style="color: #B2955B; font-size: 28px; font-weight: 600; margin-bottom: 20px; text-align: center;">Meet Moonlight</h2>
+
+      <!-- ✅ Full professional bio -->
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        I’m more than just a Realtor — I’m a dedicated guide, an advocate for your goals, and a trusted partner on one of the most meaningful journeys of your life. I’ve built my real estate practice on one key value: relationships first. To me, buying or selling a home is not just a transaction — it’s a transition. A new beginning. A life decision that deserves care, clarity, and attention to detail. That’s what I offer to every client I work with.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        Based in Vancouver, I specialize in helping clients from all walks of life — from first-time buyers to seasoned investors — make confident real estate moves. With a deep understanding of our local market and a proactive approach to communication, I simplify the process so you can focus on what matters most: your next step forward.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        I take pride in being responsive, reliable, and fully committed to your success. Whether you’re buying a cozy condo, selling a family home, or seeking a long-term investment, I’m here with honest advice, effective strategy, and thoughtful service tailored to your needs. No pressure, no rush — just clear guidance and consistent support.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        If you’re ready to take the next step — whether it’s buying, selling, or just learning more about your options — I’m here to help.
+      </p>
+
+      <!-- ✅ Closing lines -->
+      <p style="font-size: 16px; line-height: 1.6; color: #333; font-weight: 600; margin-top: 30px;">
+        Let’s talk.<br>Let’s plan.<br>Let’s move forward together.
+      </p>
+
+      <p style="text-align: right; font-style: italic; font-size: 16px; color: #777; margin-top: 20px;">– Moonlight</p>
+
+      <div style="text-align: center; margin-top: 30px;">
+  <a href="contact.html" style="background-color:#bfa265; color:white; padding:12px 28px; border-radius:30px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: 0.3s;">Schedule a Free Consultation</a>
 </div>
-</div>
-</div>
-</div>
-</div>
-<section class="about section">
-<div class="container" data-aos="fade-up">
-<div class="row justify-content-center">
-<div class="col-lg-10">
-<div class="content text-center">
-<p>I’m more than just a Realtor — I’m a dedicated guide, an advocate for your goals, and a trusted partner on one of the most meaningful journeys of your life.</p>
-<p>I’ve built my real estate practice on one key value: relationships first. To me, buying or selling a home is not just a transaction — it’s a transition. A new beginning. A life decision that deserves care, clarity, and attention to detail.</p>
-<p>Based in Vancouver, I specialize in helping clients from all walks of life — from first-time buyers to seasoned investors — make confident real estate moves. With a deep understanding of our local market and a proactive approach to communication, I simplify the process so you can focus on what matters most: your next step forward.</p>
-<p>Whether you’re buying a cozy condo, selling a family home, or seeking a long-term investment, I’m here with honest advice, effective strategy, and thoughtful service tailored to your needs. No pressure, no rush — just clear guidance and consistent support.</p>
-<p>If you’re ready to take the next step — whether it’s buying, selling, or just learning more about your options — I’m here to help.</p>
-<p><strong>Let’s talk. Let’s plan. Let’s move forward together.</strong></p>
-</div>
-</div>
-</div>
-</div>
-</section>
+
+
+    </div>
+  </div>
 </main>
 
 
-<footer class="footer" id="footer"><img alt="Moonlight The Realtor Logo" src="assets/img/logo-footer.png" style="max-width: 180px; margin-bottom: 5px;" />
-<div class="container">
-<div class="row gy-4">
-<div class="col-lg-12 footer-info text-center">
 
-<h4 class="mb-1" style="margin-bottom: 5px;">Moonlight The Realtor</h4>
-<p style="margin-top: 0;">Let’s find your dream home today!</p>
-<ul style="list-style: none; padding-left: 0;">
-<li><strong>Phone:</strong> <a href="tel:+16047281374">+1 604-728-1374</a></li>
-<li><strong>Address:</strong> <a href="https://maps.google.com/?q=Mainland+St,+Vancouver,+BC" target="_blank">Mainland St., Vancouver, BC</a></li>
-<li><strong>Email:</strong> <a href="mailto:info@moonlighttherealtor.com">info@moonlighttherealtor.com</a></li>
-<li><strong>Hours:</strong> Monday to Sunday, 9 AM – 7 PM</li>
-</ul>
-<div class="social-links d-flex justify-content-center mt-3">
-<a class="instagram" href="https://instagram.com/moonlighttherealtor" target="_blank"><i class="bi bi-instagram"></i></a>
-<a class="facebook" href="https://facebook.com/moonlighttherealtor" target="_blank"><i class="bi bi-facebook"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="container mt-4 text-center">
-<p>© Moonlight The Realtor — All Rights Reserved</p>
-</div>
+  <!-- Footer -->
+  
+
+<div style="background-color: #e9ddc8; padding-top: 30px; padding-bottom: 30px;">
+  <footer class="footer" id="footer" style="padding: 0 0 40px 0; background-color: #e9ddc8;">
+  <div class="container" style="display: flex; align-items: flex-start; gap: 30px;">
+    <img alt="Moonlight The Realtor Logo" src="assets/img/logo-footer.png" style="max-width: 150px; margin-bottom: 0;" />
+    <ul style="list-style: none; padding: 0; margin: 12px 0 0 0;">
+      <li style="margin-bottom: 0;"><strong>Moonlight The Realtor</strong></li>
+      <li style="margin-bottom: 0;">Your Real Estate Journey Guided By The Light Of Experience And Care</li>
+      <li style="margin-bottom: 0;"><strong>Phone:</strong> <a href="tel:+16047281374" style="color: #0000EE; text-decoration: underline;">+1 604–728–1374</a></li>
+      <li style="margin-bottom: 0;"><strong>Address:</strong> <a href="#" style="color: #0000EE; text-decoration: underline;">Mainland St., Vancouver, BC</a></li>
+      <li style="margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:moonlighttherealtor@gmail.com" style="color: #0000EE; text-decoration: underline;">moonlighttherealtor@gmail.com</a></li>
+      <li style="margin-bottom: 0;"><strong>Hours:</strong> Monday to Sunday, 9 AM – 7 PM</li>
+      <li style="margin-top: 0;">© Moonlight The Realtor — All Rights Reserved</li>
+    </ul>
+  </div>
 </footer>
+
+
+<a href="tel:+16047281374" class="floating-call-btn" title="Call Now">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
 </body>
 </html>
