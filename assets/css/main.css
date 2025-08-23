@@ -1804,3 +1804,46 @@ a:hover {
     display: none !important;
   }
 }
+
+/* 1. Fluid Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. Base Font Size */
+body {
+  font-size: 1rem;
+}
+
+/* 3. Tap-Friendly Navigation and Buttons */
+nav a, button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+/* 4. Footer Spacing for Better Readability */
+footer {
+  padding: 2rem 1rem;
+  line-height: 1.5;
+}
+
+/* 5. Stack Testimonials on Medium Screens */
+@media (max-width: 768px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* 6. Increase Font Size for Small Screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
