@@ -106,6 +106,7 @@
 <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
 </head>
+
 <body style="background-color: #f6f0e6;">
 <header class="header d-flex align-items-center fixed-top">
 <div style="display: flex; align-items: center; justify-content: space-between; width: 90%; margin: 0 auto;">
@@ -114,16 +115,20 @@
 <div style="font-size: 14px;">THE REALTOR</div>
 </div>
 <nav class="navmenu" id="navmenu">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="properties.html">Properties</a></li>
-<li><a href="meet moonlight.html">Meet Moonlight</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <div class="logo">Moonlight Realtor</div>
+
+  <i class="menu-toggle bi bi-list d-xl-none"></i>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="properties.html">Properties</a></li>
+    <li><a href="meet moonlight.html">Meet Moonlight</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
+
 </div>
 </header>
 <main class="main">
@@ -594,5 +599,13 @@
   <i class="bi bi-telephone-fill"></i>
 </a>
 
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
