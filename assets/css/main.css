@@ -1899,11 +1899,12 @@ footer {
     padding: 1rem 0;
   }
 }
+
 /* Fix broken mobile consultation button text wrapping */
 .btn-consult {
-  display: block;             /* Makes button full-width on mobile */
-  width: 100%;
-  padding: 12px 20px;         /* Adds clickable touch area */
+  display: block;                 /* Full-width on mobile */
+  width: 100%;                    /* Ensures button spans container width */
+  padding: 12px 20px;             /* Expand tap area for mobile users */
   background-color: #bfa265;
   color: white;
   font-weight: 600;
@@ -1913,12 +1914,12 @@ footer {
   transition: 0.3s;
   box-sizing: border-box;
   text-align: center;
-  white-space: normal;        /* Allows text to wrap */
-  word-wrap: break-word;      /* Ensures the text breaks cleanly */
+  white-space: normal;           /* Allows text to wrap */
+  overflow-wrap: break-word;     /* Ensures long words or lines break cleanly */
 }
 
-/* Optional: additional control for the text inside the span */
 .btn-consult span {
   display: inline-block;
   max-width: 100%;
+  word-wrap: break-word;         /* Wraps long words */
 }
