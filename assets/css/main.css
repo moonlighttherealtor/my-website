@@ -1899,3 +1899,20 @@ footer {
     padding: 1rem 0;
   }
 }
+/* 1. Ensure the button scales and wraps gracefully */
+.btn {
+  white-space: normal;      /* allows text to wrap instead of overflowing */
+  display: inline-block;     /* better control than inline */
+  max-width: 100%;           /* do not exceed container width */
+  box-sizing: border-box;    /* includes padding in width */
+  text-align: center;        /* keep text centered */
+}
+
+/* 2. For narrow mobile screens, add padding and full width */
+@media (max-width: 576px) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;      /* ensure touch-friendly tap area */
+  }
+}
