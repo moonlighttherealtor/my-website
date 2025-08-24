@@ -1899,20 +1899,30 @@ footer {
     padding: 1rem 0;
   }
 }
-/* 1. Ensure the button scales and wraps gracefully */
-.btn {
-  white-space: normal;      /* allows text to wrap instead of overflowing */
-  display: inline-block;     /* better control than inline */
-  max-width: 100%;           /* do not exceed container width */
-  box-sizing: border-box;    /* includes padding in width */
-  text-align: center;        /* keep text centered */
+/* Fix consultation button wrapping on mobile */
+.btn-consult {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-/* 2. For narrow mobile screens, add padding and full width */
+/* Let the button text wrap correctly */
+.btn-consult span {
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* On very small screens, make the button full width */
 @media (max-width: 576px) {
-  .btn {
+  .btn-consult {
     display: block;
     width: 100%;
-    padding: 12px 20px;      /* ensure touch-friendly tap area */
+    padding: 12px 20px;
   }
 }
